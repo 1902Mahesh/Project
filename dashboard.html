@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/dashboard.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <title>Dashboard</title>
   </head>
@@ -40,7 +40,7 @@
             </span>
             <input
               type="search"
-              class="form-control rounded search_input"
+              class="form-control rounded search_input border-0"
               placeholder="Search"
               aria-label="Search"
               aria-describedby="search-addon"
@@ -73,39 +73,273 @@
       </div>
 
       <div class="d-flex flex-row">
-        <div  style="width: 242px;" class="mt-3">
-            <div class="sidebar_section">
-              <div class="sidebar_menu">
-                <ul class="">
-                  <li class="nav_item">
-                    <img src="./images/dashboard-default.svg" alt="" width="20px" height="20px" class="mb-1">
-                    <a href="#">Dashboard</a>
-                  </li>
-                  <li class="nav_item">
-                    <img src="./images/dashboard-default.svg" alt="" width="20px" height="20px" class="mb-1">
-                    <a href="#">Home</a>
-                  </li>
-                  <li class="nav_item">
-                    <img src="./images/dashboard-default.svg" alt="" width="20px" height="20px" class="mb-1">
-                    <a href="#">About</a>
-                  </li>
-                  <li class="nav_item">
-                    <img src="./images/dashboard-default.svg" alt="" width="20px" height="20px" class="mb-1">
-                    <a href="#">Services</a>
-                  </li>
-                  <li class="nav_item">
-                    <img src="./images/dashboard-default.svg" alt="" width="20px" height="20px" class="mb-1">
-                    <a href="#">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+        <!-- sidebar  -->
+        <div style="width: 242px;" class="mt-3" id="sidebar">
+            <ul class="side-menu top">
+                <li>
+                    <a href="#">
+                        <img src="./images/dashboard-active.svg" alt="" width="12%" height="12%">
+                        <span style="color: #C8242F;">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/graph-default.svg" alt="" width="12%" height="12%">
+                        <span>Analysis</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/inbox-default.svg" alt="" width="12%" height="12%">
+                        <span>Inbox</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/clock-default.svg" alt="" width="12%" height="12%">
+                        <span>History</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/user-default.svg" alt="" width="12%" height="12%">
+                        <span>Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/maintenance-default.svg" alt="" width="12%" height="12%">
+                        <span>Maintenance</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/setting-default.svg" alt="" width="12%" height="12%">
+                        <span>Setting</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Body for Graph and table -->
+        <div class="main_body" id ="main_body" style="width: 100%;  background-color: #FAFAFA;">
+            <!-- Dashboard Title -->
+          <div class="dashboard_title">
+            Dashboard
           </div>
-        <div
-          class=""
-          style="width: 100%; height: 85vh; background-color: #f4f0f0;"
-        >
-          Ww2
+
+          <!-- Data notes -->
+           <div class="datanote-container d-flex flex-row justify-content-between">
+            <div class="datanotes d-flex flex-row justify-content-center align-items-center">
+                <img src="./images/star.svg" alt="">
+                <div>
+                    <div class="data-value">23,456</div>
+                    <div class="data-desc">New Products</div>
+                </div>
+               </div>
+               <div class="datanotes d-flex flex-row justify-content-center align-items-center">
+                <img src="./images/new-product.svg" alt="">
+                <div>
+                    <div class="data-value">23,456</div>
+                    <div class="data-desc">New Products</div>
+                </div>
+               </div>
+               <div class="datanotes d-flex flex-row justify-content-center align-items-center">
+                <img src="./images/total-product.svg" alt="" width="40px" height="40p">
+                <div>
+                    <div class="data-value">23,456</div>
+                    <div class="data-desc">New Products</div>
+                </div>
+               </div>
+               <div class="datanotes d-flex flex-row justify-content-center align-items-center">
+                <img src="./images/dollar-filled.svg" alt="">
+                <div>
+                    <div class="data-value">23,456</div>
+                    <div class="data-desc">New Products</div>
+                </div>
+               </div>
+               <div class="datanotes d-flex flex-row justify-content-center align-items-center">
+                <img src="./images/money-bag.svg" alt="">
+                <div>
+                    <div class="data-value">23,456</div>
+                    <div class="data-desc">New Products</div>
+                </div>
+               </div>
+           </div>
+           
+           <!-- Charts section -->
+            <div class="chart-container d-flex flex-row">
+                <div class="chart-body trend-chart">
+                    <div class="chart-header d-flex flex-row justify-content-between">
+                        <div class="chart-header-sales">Sale</div>
+                        <div class="chart-header-timeline">
+                            <span class="timeline">Weekly</span>
+                            <span class="timeline">Monthly</span>
+                            <span class="timeline timeline_selected">Yearly</span>
+                        </div>
+                    </div>
+                    <img src="./images/data-graph.png" alt="" class="trend-chart-img">
+                    
+                </div>
+                <div class="chart-body pie-chart">
+                    <div>
+                        <p>Sales by Country</p>
+                    </div>
+                    <img src="./images/pie-chart.svg" alt="" class="pie-chart-img">
+                    <div class="row">
+                        <div class="col-6 d-flex flex-row  align-items-center">
+                            <div style="background-color: #C8242F;" class="radio_icon"></div>
+                            <span style="font-size: 15px;">United State of America</span>
+                        </div>
+                        <div class="col-6 d-flex flex-row  align-items-center" >
+                            <div style=" background-color: #A2B86C;"  class="radio_icon"></div>
+                            <span style="font-size: 15px;">Canada</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 d-flex flex-row  align-items-center">
+                            <div style="background-color: #F16C20;" class="radio_icon"></div>
+                            <span style="font-size: 15px;">Russia</span>
+                        </div>
+                        <div class="col-6 d-flex flex-row  align-items-center" >
+                            <div style="background-color: #EBC844;" class="radio_icon"></div>
+                            <span style="font-size: 15px;">India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+            <!-- Table Section -->
+             <div class="table-container">
+                <div class="d-flex flex-row justify-content-between">
+                    <span class="table-header" style="font-size: 22px;">Invoices</span>
+                    <span class="table-header" style="font-size: 12px; color: #C8242F; text-decoration: underline;">View All</span>
+                </div>
+                <div class="table-layout">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">INVOICE</th>
+                            <th scope="col">COMPANY NAME</th>
+                            <th scope="col">EMAIL</th>
+                            <th scope="col">DUE DATE</th>
+                            <th scope="col">STATUS</th>
+                            <th scope="col">AMOUNT</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>651535</td>
+                            <td>Public Adjusting Firm</td>
+                            <td>georgia.young@example.com</td>
+                            <td>24 May, 2020</td>
+                            <td>
+                                <div>
+                                    <button class="btn-paid">Paid</button>
+                                </div>
+                            </td>
+                            <td>$47,800</td>
+                          </tr>
+                          <tr>
+                            <td>558612</td>
+                            <td>Other</td>
+                            <td>jessica.hanson@example.com</td>
+                            <td>24 May, 2020</td>
+                            <td>
+                                <div>
+                                    <button class="btn-paid">Paid</button>
+                                </div>
+                            </td>
+                            <td>$98,000</td>
+                          </tr>
+                          <tr>
+                            <td>558612</td>
+                            <td>Vendor</td>
+                            <td>alma.lawson@example.com</td>
+                            <td>8 Sep, 2020</td>
+                            <td>
+                                <div>
+                                    <button class="btn-paid">Paid</button>
+                                </div>
+                            </td>
+                            <td>$20,900</td>
+                          </tr>
+                          <tr>
+                            <td>558612</td>
+                            <td>Property Management Company</td>
+                            <td>kenzi.lawson@example.com</td>
+                            <td>22 Oct, 2020</td>
+                            <td>
+                                <div>
+                                    <button class="btn-paid ">Paid</button>
+                                </div>
+                            </td>
+                            <td>$10,570</td>
+                          </tr>
+                          <tr>
+                            <td>651535</td>
+                            <td>Subcontractor Company</td>
+                            <td>jackson.graham@example.com</td>
+                            <td>1 Feb, 2020</td>
+                            <td>
+                                <div>
+                                    <button class="btn-failed">Failed</button>
+                                </div>
+                            </td>
+                            <td>$10,200</td>
+                          </tr>
+                          <tr>
+                            <td>653518</td>
+                            <td>Mortgage Company</td>
+                            <td>felicia.reid@example.com</td>
+                            <td>22 Oct, 2020</td>
+                            <td>
+                                <div>
+                                    <button class="btn-pending">Pending</button>
+                                </div>
+                            </td>
+                            <td>$12,600</td>
+                          </tr>
+                          <tr>
+                            <td>487441</td>
+                            <td>TPA</td>
+                            <td>dolores.chambers@example.com</td>
+                            <td>21 Sep, 2020</td>
+                            <td>
+                                <div>
+                                    <button class="btn-paid">Paid</button>
+                                </div>
+                            </td>
+                            <td>$11,170</td>
+                          </tr>
+                          <tr>
+                            <td>267400</td>
+                            <td>Fire Department</td>
+                            <td>nevaeh.simmons@example.com</td>
+                            <td>17 Oct, 2020</td>
+                            <td>
+                                <div>
+                                    <button class="btn-failed">Failed</button>
+                                </div>
+                            </td>
+                            <td>$28,000</td>
+                          </tr>
+                          <tr>
+                            <td>449003</td>
+                            <td>Insurance Carrier</td>
+                            <td>curtis.weaver@example.com</td>
+                            <td>21 Sep, 2020</td>
+                            <td>
+                                <div>
+                                    <button class="btn-paid">Paid</button>
+                                </div>
+                            </td>
+                            <td>$10,000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+             </div>
         </div>
       </div>
       </div>
