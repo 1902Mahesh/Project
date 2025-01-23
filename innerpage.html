@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/innerpage.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>Inner Page</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Navbar Header -->
+      <div
+        class="continer d-flex flex-row align-items-center justify-content-between"
+      >
+        <div class="left_header d-flex flex-row m-2">
+          <div class="d-flex flex-row m-2">
+            <div class="p-2">
+              <img
+                src="./images/menu-bar.svg"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+            </div>
+            <div class="p-2">
+              <img src="./images/header-logo.svg" alt="" />
+            </div>
+          </div>
+          <div class="input-group rounded">
+            <span
+              class="input-group-text border-0 bg-transparent"
+              id="search-addon"
+            >
+              <img
+                src="./images/search-icon.svg"
+                alt=""
+                width="17px"
+                height="17px"
+              />
+            </span>
+            <input
+              type="search"
+              class="form-control rounded search_input border-0"
+              placeholder="Search"
+              aria-label="Search"
+              aria-describedby="search-addon"
+              style="height: 32px; margin-top: 15px"
+            />
+          </div>
+        </div>
+        <div class="right_header d-flex flex-row m-2">
+          <div class="p-2">
+            <img
+              src="./images/notification-icon.svg"
+              alt=""
+              width="25px"
+              height="20px"
+            />
+          </div>
+          <div class="p-2">
+            <img src="./images/profile.png" alt="" width="30px" height="30px" />
+          </div>
+          <span class="p-2">John Doe</span>
+          <div class="p-2">
+            <img
+              src="./images/downward-arrow.svg"
+              alt=""
+              width="16px"
+              height="16px"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex flex-row">
+        <!-- sidebar  -->
+        <div style="width: 242px" class="mt-3" id="sidebar">
+          <ul class="side-menu top">
+            <li>
+              <a href="dashboard.html">
+                <img
+                  src="./images/dashboard-default.svg"
+                  alt=""
+                  width="12%"
+                  height="12%"
+                />
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./images/graph-active.svg"
+                  alt=""
+                  width="12%"
+                  height="12%"
+                />
+                <span style="color: #c8242f">Analysis</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./images/inbox-default.svg"
+                  alt=""
+                  width="12%"
+                  height="12%"
+                />
+                <span>Inbox</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./images/clock-default.svg"
+                  alt=""
+                  width="12%"
+                  height="12%"
+                />
+                <span>History</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./images/user-default.svg"
+                  alt=""
+                  width="12%"
+                  height="12%"
+                />
+                <span>Users</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./images/maintenance-default.svg"
+                  alt=""
+                  width="12%"
+                  height="12%"
+                />
+                <span>Maintenance</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./images/setting-default.svg"
+                  alt=""
+                  width="12%"
+                  height="12%"
+                />
+                <span>Setting</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- main body -->
+        <div
+          class="main_body"
+          id="main_body"
+          style="width: 100%; background-color: #fafafa"
+        >
+          <!-- Body Title -->
+          <div class="body_title">Analysis</div>
+
+          <!-- Form -->
+          <div class="form_container">
+            <form action="">
+              <div class="form_one">
+                <p class="col_text">One Column</p>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="formGroupExampleInput"
+                    placeholder="Username"
+                  />
+                </div>
+                <div class="form-floating one_dropdown">
+                  <select
+                    class="form-select"
+                    id="floatingSelect"
+                    aria-label="Floating label select example"
+                    style="border-radius: 3px"
+                  >
+                    <option value="" selected disabled style="color: #adadad">
+                      Dropdown
+                    </option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    placeholder="Multiple line"
+                    id="floatingTextarea2"
+                    style="height: 150px"
+                  ></textarea>
+                </div>
+              </div>
+
+              <!-- Two Column -->
+
+              <div class="form_one">
+                <p class="col_text">Two Column</p>
+                <div class="row mb-3">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Name"
+                      aria-label="First name"
+                    />
+                  </div>
+                  <div class="col input-container">
+                    <label for="username" class="input-label">Username</label>
+                    <input
+                      type="text"
+                      class="form-control input-field"
+                      id="username"
+                      value="johndoe"
+                      aria-label="Last name"
+                    />
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="First name"
+                      aria-label="First name"
+                    />
+                  </div>
+                  <div class="col">
+                    <div class="form-floating one_dropdown">
+                      <select
+                        class="form-select two_dropdown"
+                        id="floatingSelect"
+                        aria-label="Floating label select example"
+                        style="border-radius: 3px"
+                      >
+                        <option
+                          value=""
+                          selected
+                          disabled
+                          id="base_option"
+                          style="color: #adadad"
+                        >
+                          Dropdown
+                        </option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Three Column -->
+
+              <div class="form_one">
+                <p class="col_text">Three Column</p>
+                <div class="row mb-3">
+                  <div class="col input-container">
+                    <label for="designation" class="input-label">Focus</label>
+                    <input
+                      type="text"
+                      class="form-control input-field"
+                      aria-label="First name"
+                    />
+                  </div>
+                  <div class="col input-container">
+                    <label for="password" class="input-label">Password</label>
+                    <input
+                      type="password"
+                      class="form-control input-field"
+                      aria-label="Last name"
+                    />
+                  </div>
+                  <div class="col input-container">
+                    <label class="input-label">Disabled</label>
+                    <input
+                      type="text"
+                      class="form-control dashed-input input-field"
+                      placeholder="johndoe"
+                      aria-label="Last name"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Four Column -->
+              <div class="form_one">
+                <p class="col_text">Four Column</p>
+                <div class="row mb-3">
+                  <div class="col input-container">
+                    <label
+                      for="designation"
+                      class="input-label lable-designation"
+                      >Designation</label
+                    >
+                    <input
+                      type="text"
+                      id="designation"
+                      class="form-control input-field"
+                      value="UI Designer"
+                      aria-label="First name"
+                    />
+                    <label
+                      class="column-four"
+                      for="designation"
+                      style="color: #ff3b3b"
+                      >Enter Valid Data</label
+                    >
+                  </div>
+                  <div class="col">
+                    <input
+                      type="password"
+                      id="name"
+                      class="form-control"
+                      placeholder="Name"
+                      aria-label="Last name"
+                    />
+                    <label class="column-four" for="name" style="color: #adadad"
+                      >Enter full Name as per Id</label
+                    >
+                  </div>
+                  <div class="col input-container">
+                    <label for="username" class="input-label">Username</label>
+                    <input
+                      type="text"
+                      class="form-control input-field"
+                      id="username"
+                      value="johndoe"
+                      aria-label="Last name"
+                    />
+                  </div>
+                  <div class="col form-floating" style="padding: 0">
+                    <select
+                      class="form-select three_dropdown"
+                      id="floatingSelect"
+                      aria-label="Floating label select example"
+                      style="border-radius: 3px"
+                    >
+                      <option value="" selected disabled style="color: #adadad">
+                        Dropdown
+                      </option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- other input elements -->
+
+              <!-- File upload -->
+              <div class="form_one">
+                <p class="col_text">Other Design Elements</p>
+                <p class="col_text_2">File Upload</p>
+                <div class="file_upload d-flex flex-row align-items-center">
+                  <button class="btn_upload" type="submit">
+                    <img
+                      src="./images/cloud-upload-icon.svg"
+                      alt=""
+                      width="20%"
+                    />
+                    <span style="color: #c8242f">Upload</span>
+                  </button>
+                  <p>No item Selected</p>
+                </div>
+              </div>
+
+              <!-- Radio Button -->
+              <div class="form_radio">
+                <p class="col_text_2">Radio Button</p>
+                <div class="form-check form-check-inline p-1">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label pr-2" for="inlineRadio1"
+                    >Option 1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="inlineRadio2"
+                    >Option 2</label
+                  >
+                </div>
+              </div>
+
+              <!-- CheckBox Button -->
+              <div class="form_radio">
+                <p class="col_text_2">Checkbox Button</p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="inlineCheckbox1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineCheckbox1"
+                    >Option 1</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="inlineCheckbox2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="inlineCheckbox2"
+                    >Option 2</label
+                  >
+                </div>
+              </div>
+
+              <!-- Snack Bar -->
+              <div class="form_radio">
+                <p class="col_text">Snackbar</p>
+                <div class="row mb-4">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control snackbar"
+                      id="danger"
+                      placeholder="This is an error Message"
+                      aria-label="First name"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="info"
+                      placeholder="This is an Information Message"
+                      aria-label="Last name"
+                    />
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="warning"
+                      placeholder="This is an Warning Message"
+                      aria-label="First name"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="success"
+                      placeholder="This is an Success Message"
+                      aria-label="Last name"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- call Button -->
+
+              <!-- Buttons -->
+              <div class="form_radio">
+                <p class="col_text_2">Call to action</p>
+                <button class="btn-action-primary">Primary</button>
+                <button class="btn-action-secondary">Secondary</button>
+              </div>
+
+              <!-- Collapse -->
+              <div class="form_radio">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#home"
+                      type="button"
+                      role="tab"
+                      aria-controls="home"
+                      aria-selected="true"
+                    >
+                      Home
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="profile-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="profile"
+                      aria-selected="false"
+                    >
+                      Profile
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="contact-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#contact"
+                      type="button"
+                      role="tab"
+                      aria-controls="contact"
+                      aria-selected="false"
+                    >
+                      Contact
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="home"
+                    role="tabpanel"
+                    aria-labelledby="home-tab"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis doloribus nemo corrupti ducimus ex beatae est
+                    deserunt quibusdam fugit consequuntur ipsum voluptates
+                    voluptate dicta voluptatem iste natus vero quaerat minima
+                    cupiditate, labore error recusandae! Adipisci minus
+                    repellendus dolorem itaque laboriosam ipsam officia
+                    consectetur quae maxime. Dignissimos fugiat inventore rerum
+                    fuga.
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="profile"
+                    role="tabpanel"
+                    aria-labelledby="profile-tab"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsam commodi maiores, vel provident quidem nemo aliquam
+                    alias recusandae aliquid repellendus inventore illo autem
+                    sequi reiciendis accusantium error possimus explicabo
+                    doloribus corporis, hic at aperiam harum nisi. In
+                    exercitationem esse consequuntur accusantium, ducimus quo
+                    labore accusamus blanditiis magnam officia, atque dolorem.
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="contact"
+                    role="tabpanel"
+                    aria-labelledby="contact-tab"
+                  >
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Dignissimos totam fuga ipsum, sunt pariatur quidem. Totam,
+                    et iure? Inventore unde facere reprehenderit nesciunt
+                    perspiciatis sapiente fugiat rem ab dolores iusto est
+                    excepturi quaerat, delectus harum atque repudiandae! At,
+                    maxime vero necessitatibus fugit, dolores placeat ea nostrum
+                    magni officia repellat ex.
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

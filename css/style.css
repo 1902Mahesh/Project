@@ -1,95 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-::placeholder{
-    color: #ADADAD;
-}
-
-.main{
-    height: 100vh;
+::placeholder {
+  color: #adadad;
 }
 
-body{
-    background-color: #FAFAFA;
+.main {
+  height: 100vh;
 }
 
+body {
+  background-color: #fafafa;
+}
 
-span{
-    color: #C8242F;
-    font-weight: bolder;
+span {
+  color: #c8242f;
+  font-weight: bolder;
 }
 
 .left-section {
-    margin: 90px;
+  margin: 90px;
 }
 
-.right-section{
-    width: 620px;
-    padding: 56px;
-    margin: 100px;
+.right-section {
+  width: 620px;
+  padding: 56px;
+  margin: 100px;
 }
 
-.login_stat{
-    /* font-family: "Roboto", serif;
+.login_stat {
+  /* font-family: "Roboto", serif;
     font-size: 25px; */
-    font: normal normal normal 25px/33px Roboto;
-    color: #3E3E3E;
-    font-weight: normal;
+  font: normal normal normal 25px/33px Roboto;
+  color: #3e3e3e;
+  font-weight: normal;
 }
 
-.logo{
-    margin-bottom: 20px;
+.logo {
+  margin-bottom: 20px;
 }
 
-.company_statement{
-    /* font-family: "Roboto", serif;
+.company_statement {
+  /* font-family: "Roboto", serif;
     font-weight: 300;
     font-size: 40px; */
-    /* padding: auto; */
-    font: normal normal 360 40px/47px Roboto;
-    text-align: left;
-    margin-bottom: 30px;
+  /* padding: auto; */
+  font: normal normal 360 40px/47px Roboto;
+  text-align: left;
+  margin-bottom: 30px;
 }
 
-
-.center-image{
-    border-radius: 50%;
-    border: 20px solid #FFFFFF;
-    box-shadow: 0px 4px 31px #0000000A;
+.center-image {
+  border-radius: 50%;
+  border: 20px solid #ffffff;
+  box-shadow: 0px 4px 31px #0000000a;
 }
 
-.btn{
-    color: #FFFFFF;
-    background-color: #C8242F;
-    border-radius: 23px;
-    font-size: 18px;
-    /* padding: 15px; */
-    width: 138px;
-    height: 45px;
+.btn {
+  color: #ffffff;
+  background-color: #c8242f;
+  border-radius: 23px;
+  font-size: 18px;
+  /* padding: 15px; */
+  width: 138px;
+  height: 45px;
 }
 
-.input_form{
-    width: 400px;
+.input_form {
+  max-width: 400px;
+  width: 100%;
 }
 
-input{
-    padding: 12px !important;
+input {
+  padding: 12px !important;
 }
 
-
-
-.register_msg{
-    color: #ADADAD;
+.register_msg {
+  color: #adadad;
 }
 
-a{
-    color: #C8242F;
+a {
+  color: #c8242f;
 }
 
-.forgot_pass{
-    color: #ADADAD;
+.forgot_pass {
+  color: #adadad;
 }
-
