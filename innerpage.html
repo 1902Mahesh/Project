@@ -145,14 +145,14 @@
                     />
                   </div>
                   <div class="input_height col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 input-container">
-                    <label for="username" class="input-label">Username</label>
                     <input
                       type="text"
                       class="form-control input-field"
                       id="username"
-                      value="johndoe"
-                      aria-label="Last name"
+                      placeholder=""
+                      aria-label="First name"
                     />
+                    <label for="username" class="input-label">Username</label>
                   </div>
                 </div>
                 <div class="row mb-3">
@@ -195,31 +195,38 @@
               <div class="form_one">
                 <p class="col_text">Three Column</p>
                 <div class="row mb-3">
-                  <div class="input_height col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 input-container">
-                    <label for="designation" class="input-label">Focus</label>
+                  <div class="input_height col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 input-block position-relative">
                     <input
                       type="text"
-                      class="form-control input-field"
+                      class="form-control input-block-field"
+                      id="designation"
+                      placeholder=""
                       aria-label="First name"
                     />
+                    <label for="designation" class="input-block-label">Focus</label>
                   </div>
-                  <div class="input_height col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 input-container">
-                    <label for="password" class="input-label">Password</label>
+                  
+                  <div class="input_height col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 input-container position-relative">
                     <input
                       type="password"
                       class="form-control input-field"
-                      aria-label="Last name"
+                      id="password"
+                      placeholder=""
+                      aria-label="Password"
                     />
+                    <label for="designation" class="input-label">Password</label>
                   </div>
-                  <div class="input_height col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 input-container">
-                    <label class="input-label">Disabled</label>
+                  <div class="input_height col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 input-container position-relative">
                     <input
                       type="text"
-                      class="form-control dashed-input input-field"
-                      placeholder="johndoe"
-                      aria-label="Last name"
+                      class="form-control input-field dashed-input "
+                      id="disabled"
+                      placeholder=""
+                      aria-label="disabled"
+                      value="JohnDoe"
                       disabled
                     />
+                    <label for="designation" class="input-label">Disabled</label>
                   </div>
                 </div>
               </div>
@@ -228,19 +235,19 @@
               <div class="form_one">
                 <p class="col_text">Four Column</p>
                 <div class="row mb-3">
-                  <div class="input_height col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 input-container">
-                    <label
-                      for="designation"
-                      class="input-label lable-designation"
-                      >Designation</label
-                    >
+                  <div class="input_height col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 input-block position-relative">
                     <input
                       type="text"
                       id="designation"
-                      class="form-control input-field"
-                      value="UI Designer"
-                      aria-label="First name"
+                      class="form-control input-block-field"
+                      placeholder=""
+                      aria-label="Designation"
                     />
+                    <label
+                      for="designation"
+                      class="input-block-label lable-designation"
+                      >Designation</label
+                    >
                     <label
                       class="column-four"
                       for="designation"
@@ -248,27 +255,28 @@
                       >Enter Valid Data</label
                     >
                   </div>
-                  <div class="input_height col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                  <div class="input_height col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 input-container position-relative">
                     <input
-                      type="password"
+                      type="text"
+                      class="form-control input-field"
                       id="name"
-                      class="form-control"
-                      placeholder="Name"
-                      aria-label="Last name"
+                      placeholder=""
+                      aria-label="Name"
                     />
+                    <label for="username" class="input-label">Name</label>
                     <label class="column-four" for="name" style="color: #adadad"
                       >Enter full Name as per Id</label
                     >
                   </div>
-                  <div class="input_height col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 input-container">
-                    <label for="username" class="input-label">Username</label>
+                  <div class="input_height col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 input-container positionn-relative">
                     <input
                       type="text"
                       class="form-control input-field"
                       id="username"
-                      value="johndoe"
-                      aria-label="Last name"
+                      placeholder=""
+                      aria-label="Username"
                     />
+                    <label for="username" class="input-label">Username</label>
                   </div>
                   <div class="input_height col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
                     <div class="form-floating one_dropdown">
