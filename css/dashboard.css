@@ -11,10 +11,6 @@ body {
   margin-left: 25px;
 }
 
-.navbar {
-  /* position: fixed !important; */
-}
-
 .nav_item {
   list-style: none;
   padding: 12px;
@@ -24,9 +20,49 @@ ul {
   padding-left: 0;
 }
 
+.right_header{
+  display: flex;
+  flex-direction: row;
+}
+
+.profile_part{
+  display: flex;
+  flex-direction: row;
+}
+
+.notifications{
+  display: none;
+}
+
+.right_header_img{
+  margin-right: 29px;
+}
+
+.search_input{
+  border: none;
+}
+
+
+/* Navbar Responsiveness */
+@media (max-width : 992px){
+  .search_box{
+    padding-left: 10px;
+  }
+  .search_input{
+    border: 1px solid black;
+  }
+
+  .right_header_img{
+    margin: 0;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+
+}
+
 /*  sidebar menu*/
 .sidebar {
-  position: fixed;
+  position: absolute;
   top: 78;
   left: 30;
   height: 100%;
@@ -46,25 +82,30 @@ ul {
   font-size: 17px;
 }
 
+.dashboard_active{
+  background-color: #FFF3F4 !important;
+}
+
 /* Main Content */
 .main_content {
   height: 100%;
   margin-left: 230px;
-  padding: 20px;
+  padding: 50px;
   background-color: #fafafa;
 }
 
 /* Dashboard title */
-.dashboard_title {
+/* .dashboard_title {
   padding: 15px;
   padding-left: 3%;
   padding-bottom: 2%;
-}
+} */
 
 .dashboard_title span {
   font-size: 24px;
   font-weight: 600;
 }
+
 
 /* Configuration for mobile view */
 @media (max-width: 780px) {
@@ -160,6 +201,9 @@ ul {
   gap: 35px;
 }
 
+
+
+
 /* Datanote Media Query */
 @media (max-width: 576px) {
   .column {
@@ -182,38 +226,16 @@ ul {
     padding: 1% !important;
   }
 
-  .table-header-invoice {
-    font-size: 1.7rem !important;
-  }
-
-  .table-header-viewAll {
-    font-size: 0.5rem !important;
-  }
 }
 
 @media (min-width: 576px) and (max-width: 780px) {
   .country_name {
-    font-size: 1.5rem !important;
-  }
-  .table-header-invoice {
-    font-size: 2rem !important;
-  }
-
-  .table-header-viewAll {
     font-size: 1rem !important;
   }
 }
 
 @media (min-width: 780px) and (max-width: 992px) {
   .country_name {
-    font-size: 1.5rem !important;
-  }
-
-  .table-header-invoice {
-    font-size: 2.5rem !important;
-  }
-
-  .table-header-viewAll {
     font-size: 1.2rem !important;
   }
 }
@@ -222,29 +244,35 @@ ul {
   padding: 28px;
 }
 
+
 .datanotes {
   padding: 23px;
   background-color: #ffffff;
-  width: 100%;
-  margin: 13px;
+  min-width: 40px;
+  margin: 29px 0;
 }
 
 .datanotes img {
   margin-right: 25px;
 }
 
-.datanotes .data-value {
+.data-value {
   font-family: "roboto";
-  font-size: 25px;
   color: #3e3e3e;
+  font-weight: 450;
 }
 
+.data-desc {
+  font-family: "roboto";
+  color: #3e3e3e;
+  font-weight: 400;
+}
 /* chart css */
 
 .chart-container {
   padding: 28px;
   margin: 3% !important;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 }
 
 .chart-body {
@@ -279,9 +307,19 @@ ul {
   color: #c8242f;
 }
 
+.chart_bg{
+  margin: 10px 0;
+}
+
+
 .trend-chart {
   width: 1120px;
   height: 533px;
+}
+
+.trend_chart{
+  padding: 4%;
+  height: 100%;
 }
 
 .trend-chart-img {
@@ -300,6 +338,11 @@ ul {
   padding: 20px;
 }
 
+
+.chart_bg{
+  background-color: #ffffff;
+}
+
 /* Pie Chart Section Updated */
 .pie_chart_header {
   padding: 4%;
@@ -316,7 +359,7 @@ ul {
 }
 
 .pie_chart_img {
-  width: 69%;
+  width: 100%;
   height: 80% !important;
   object-fit: contain;
 }
@@ -335,24 +378,33 @@ ul {
 
 /* Table Container Updated */
 .table_container {
-  margin: 3%;
+  background-color: #ffffff;
+  margin: 58px 0;
 }
 
 .table-header-invoice {
   font-family: "Roboto";
-  font-size: 3rem;
+  font-size: 22px;
 }
 
 .table-header-viewAll {
   font-family: "Roboto";
-  font-size: 1.5rem;
+  font-size: 12px;
   color: #c8242f;
   text-decoration: underline;
+}
+
+.table_box{
+  padding: 14px;
 }
 
 /* table css */
 .table-container {
   padding: 28px;
+}
+
+.table_header{
+  padding: 26px 5px 22px 15px;
 }
 
 .table-layout {
